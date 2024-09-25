@@ -9,6 +9,9 @@ public class Vector {
     public double getY() {return this.y;}
     public double getZ() {return this.z;}    
 
+    public void setX(double x) {this.x = x;}
+    public void setY(double y) {this.y = y;}
+    public void setZ(double z) {this.z = z;} 
 
     public Vector addTwoVector(Vector vector) {
         return new Vector(this.x + vector.getX(), this.y + vector.getY(), this.z + vector.getZ());      
@@ -29,5 +32,4 @@ public class Vector {
     public String toString() {
         return "(" + this.x + ", " + this.y + ", " + this.z + ")";
     }
-
 }
